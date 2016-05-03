@@ -4,7 +4,6 @@ export class BasicAuthentication {
   }
 
   checkAuthentication(base64authentication) {
-    if (Meteor.settings.authentication) {
       // Parse from base64
       let authentication = JSON.parse(CryptoJS.enc.Base64.parse(base64authentication).toString(CryptoJS.enc.Utf8));
       console.log('authentication', JSON.stringify(authentication));
@@ -14,7 +13,6 @@ export class BasicAuthentication {
       if (!authenticationRaw) {
         throw new Meteor.Error(401, 'Bad authentication ' + JSON.stringify(authentication));
       }
-    }
   }
 
   createBase64Authentication(userName) {
