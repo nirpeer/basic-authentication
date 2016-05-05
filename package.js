@@ -12,7 +12,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.3.2.4');
-  api.use('ecmascript', 'jparker:crypto-base64');
+  api.use(['ecmascript', 'jparker:crypto-base64@0.1.0']);
   api.mainModule('basic-authentication.js');
 });
 
