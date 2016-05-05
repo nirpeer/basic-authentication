@@ -12,13 +12,9 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.3.2.4');
-  api.use('ecmascript');
+  api.use('ecmascript', 'jparker:crypto-base64');
   api.mainModule('basic-authentication.js');
 });
 
 Package.onTest(function(api) {
-  api.use('ecmascript');
-  api.use('tinytest');
-  api.use('nirpeer:basic-authentication');
-  api.mainModule('basic-authentication-tests.js');
 });
