@@ -1,6 +1,6 @@
 Package.describe({
   name: 'nirpeer:basic-authentication',
-  version: '0.0.3',
+  version: '0.0.5',
   // Brief, one-line summary of the package.
   summary: 'meteor base 64 basic authentication',
   // URL to the Git repository containing the source code for this package.
